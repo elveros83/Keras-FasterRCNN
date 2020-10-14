@@ -272,7 +272,7 @@ def threadsafe_generator(f):
     return g
 
 
-def get_anchor_gt(all_img_data, class_count, C, img_length_calc_function, backend, mode='train'):
+def get_anchor_gt(all_img_data, class_count, C, img_length_calc_function, backend='tf', mode='train'):
 
     # The following line is not useful with Python 3.5, it is kept for the legacy
     # all_img_data = sorted(all_img_data)
